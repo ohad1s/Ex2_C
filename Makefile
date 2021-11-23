@@ -4,7 +4,7 @@ FLAGS= -Wall -g
 all:connections
 
 connections: main.o my_mat.o
-	$(CC) $(FLAGS) -o run main.o my_mat.o
+	$(CC) $(FLAGS) -o connections main.o my_mat.o
 
 main.o: main.c my_mat.h
 	$(CC) $(FLAGS) -c main.c
